@@ -1,17 +1,11 @@
-import React from 'react';
-import BannerCard from '../Banner/BannerCard';
+import BannerCard from "./BannerCard";
 
-import leftImg from '../../assets/vector1.png';
-import rightImg from '../../assets/vector2.png';
-
-const Banner = () => {
+const Banner = ({ inProgress, resolved }) => {
     return (
-        <div>
-            <BannerCard
-                leftImage={leftImg}
-                rightImage={rightImg}
-            />
-        </div>
+        <BannerCard
+            inProgress={inProgress}
+            resolved={resolved}
+        />
     );
 };
 
