@@ -4,7 +4,7 @@
         "title": "Login Issue",
         "description": "User cannot login to the system",
         "customer": "John Doe",
-        "priority": "High",
+        "priority": "HIGH PRIORITY",
         "status": "Open",
         "createdAt": "2026-03-01"
     },
@@ -13,7 +13,7 @@
         "title": "Payment Failed",
         "description": "Payment not processing",
         "customer": "Alice Smith",
-        "priority": "Medium",
+        "priority": "MEDIUM PRIORITY",
         "status": "Open",
         "createdAt": "2026-03-02"
     },
@@ -22,7 +22,7 @@
         "title": "Account Suspended",
         "description": "Account suspended without notice",
         "customer": "David Lee",
-        "priority": "High",
+        "priority": "HIGH PRIORITY",
         "status": "Open",
         "createdAt": "2026-03-02"
     },
@@ -31,7 +31,7 @@
         "title": "Bug in Dashboard",
         "description": "Dashboard data not loading",
         "customer": "Emma Watson",
-        "priority": "Low",
+        "priority": "LOW PRIORITY",
         "status": "Open",
         "createdAt": "2026-03-03"
     },
@@ -40,7 +40,7 @@
         "title": "Password Reset",
         "description": "Reset link not working",
         "customer": "Chris Martin",
-        "priority": "Medium",
+        "priority": "MEDIUM PRIORITY",
         "status": "Open",
         "createdAt": "2026-03-03"
     },
@@ -49,7 +49,7 @@
         "title": "Notification Error",
         "description": "Emails not being sent to users",
         "customer": "Sophia Brown",
-        "priority": "High",
+        "priority": "HIGH PRIORITY",
         "status": "Open",
         "createdAt": "2026-03-04"
     },
@@ -58,7 +58,7 @@
         "title": "Slow Loading",
         "description": "Application loads slowly on mobile",
         "customer": "Liam Johnson",
-        "priority": "Medium",
+        "priority": "MEDIUM PRIORITY",
         "status": "Open",
         "createdAt": "2026-03-04"
     },
@@ -67,7 +67,7 @@
         "title": "Feature Request",
         "description": "Add dark mode option",
         "customer": "Olivia Davis",
-        "priority": "Low",
+        "priority": "LOW PRIORITY",
         "status": "Open",
         "createdAt": "2026-03-05"
     },
@@ -76,7 +76,7 @@
         "title": "Data Sync Issue",
         "description": "Data not syncing between devices",
         "customer": "Noah Wilson",
-        "priority": "High",
+        "priority": "HIGH PRIORITY",
         "status": "Open",
         "createdAt": "2026-03-05"
     },
@@ -85,7 +85,7 @@
         "title": "UI Bug",
         "description": "Buttons overlap on small screens",
         "customer": "Ava Martinez",
-        "priority": "Medium",
+        "priority": "MEDIUM PRIORITY",
         "status": "Open",
         "createdAt": "2026-03-06"
     }

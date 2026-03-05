@@ -8,6 +8,19 @@ const TicketsCard = ({ ticket, serial, handleSelectTask }) => {
                 ? "bg-yellow-100"
                 : "bg-gray-300"; // Resolved
 
+
+
+    // Priority Text Color Only
+    const priorityTextColor =
+        ticket.priority === "HIGH PRIORITY"
+            ? "text-red-500"
+            : ticket.priority === "MEDIUM PRIORITY"
+                ? "text-yellow-500"
+                : "text-green-500";
+
+
+
+
     return (
         <div
             onClick={() => handleSelectTask(ticket)}
@@ -29,15 +42,15 @@ const TicketsCard = ({ ticket, serial, handleSelectTask }) => {
             </p>
 
             {/* Bottom */}
-            <div className="flex justify-between mt-4 text-sm">
-                <div>
-                    <p>#{serial}</p>
-                    <p className={`font-semibold`}>
+            <div className="flex justify-between mt-4 text-sm ">
+                <div className="flex justify-between gap-2">
+                    <p>#00{serial}</p>
+                    <p className={`font-semibold ${priorityTextColor}`}>
                         {ticket.priority}
                     </p>
                 </div>
 
-                <div className="text-right">
+                <div className="text-gray-600 flex justify-between gap-2">
                     <p>{ticket.customer}</p>
                     <p>{ticket.createdAt}</p>
                 </div>
