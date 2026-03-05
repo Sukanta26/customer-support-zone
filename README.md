@@ -1,17 +1,16 @@
-# React + Vite
+1. What is JSX, and why is it used?
+ANSWER- JSX is a syntax extension for JavaScript that allows developers to write HTML-like markup directly within their JavaScript code.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+2. What is the difference between State and Props?
+ANSWER- While state controls internal behavior, props enable communication and customization between components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. What is the useState hook, and how does it work?
+ANSWER- The useState hook is a fundamental function in React that allows functional components to manage local state (dynamic data).
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+4. How can you share state between components in React?
+ANSWER- In React, state can be shared between components primarily through lifting state up, the Context API, or external state management libraries.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# customer-support-zone
+5. How is event handling done in React?
+ANSWER- Defining event handler functions and passing them as props to JSX elements using camelCase naming conventions, such as onClick instead of onclick.
