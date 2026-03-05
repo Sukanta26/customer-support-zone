@@ -6,16 +6,17 @@ const TicketStatus = ({
 }) => {
 
     return (
-        <div className="bg-gray-100 p-4 rounded-xl shadow-md h-fit">
+        <div className="p-4 rounded-xl shadow-md h-fit">
+            <h3 className="font-semibold my-2 text-center">In Progress</h3>
 
-            <h2 className="text-xl font-bold mb-4">Task Status</h2>
+
 
             {/* In Progress */}
-            <div>
-                <h3 className="font-semibold mb-2">In Progress</h3>
+            <div className="bg-white">
+
 
                 {selectedTasks.length === 0 && (
-                    <p className="text-gray-400 text-sm">No task selected</p>
+                    <p className="text-gray-400 text-sm text-center">Select a ticket to add to Task Status</p>
                 )}
 
                 {selectedTasks.map(ticket => (
@@ -34,7 +35,7 @@ const TicketStatus = ({
 
             {/* Resolved */}
             <div className="mt-6">
-                <h3 className="font-semibold mb-2">Resolved History</h3>
+                <h3 className="font-semibold mb-2 text-center">Resolved History</h3>
 
                 {resolvedHistory.map(ticket => (
                     <div key={ticket.id} className="bg-gray-200 p-2 mb-2 rounded-md text-sm">

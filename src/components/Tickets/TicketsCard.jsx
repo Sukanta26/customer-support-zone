@@ -1,18 +1,12 @@
 const TicketsCard = ({ ticket, serial, handleSelectTask }) => {
 
-    const priorityColor =
-        ticket.priority === "High"
-            ? "text-red-500"
-            : ticket.priority === "Medium"
-                ? "text-orange-500"
-                : "text-green-500";
-
-    const statusColor =
+    // Background color according to status
+    const statusBgColor =
         ticket.status === "Open"
-            ? "text-green-500"
+            ? "bg-green-300"
             : ticket.status === "In Progress"
-                ? "text-orange-500"
-                : "text-gray-500";
+                ? "bg-yellow-100"
+                : "bg-gray-300"; // Resolved
 
     return (
         <div
@@ -20,9 +14,11 @@ const TicketsCard = ({ ticket, serial, handleSelectTask }) => {
             className="p-4 bg-white shadow rounded-lg cursor-pointer hover:shadow-lg transition"
         >
             {/* Top */}
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center">
                 <h2 className="font-bold text-lg">{ticket.title}</h2>
-                <span className={`font-semibold ${statusColor}`}>
+
+                {/* Status Box */}
+                <span className={`font-semibold px-2 py-1 rounded-full ${statusBgColor} text-black`}>
                     {ticket.status}
                 </span>
             </div>
@@ -36,7 +32,7 @@ const TicketsCard = ({ ticket, serial, handleSelectTask }) => {
             <div className="flex justify-between mt-4 text-sm">
                 <div>
                     <p>#{serial}</p>
-                    <p className={`font-semibold ${priorityColor}`}>
+                    <p className={`font-semibold`}>
                         {ticket.priority}
                     </p>
                 </div>

@@ -81,29 +81,34 @@ function App() {
 
   return (
     <>
-      <Navbar handleAddTicket={handleAddTicket} />
+      <Navbar handleAddTicket={handleAddTicket}> </Navbar>
 
-      <Banner inProgress={inProgress} resolved={resolved} />
 
-      <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-6">
-        <div className="flex-1">
-          <Tickets
-            tickets={tickets}
-            handleSelectTask={handleSelectTask}
-          />
-        </div>
+      <div className="bg-gray-100 py-10">
+        <Banner inProgress={inProgress} resolved={resolved} ></Banner>
 
-        <div className="w-full lg:w-[350px]">
-          <TicketStatus
-            selectedTasks={selectedTasks}
-            resolvedHistory={resolvedHistory}
-            handleComplete={handleComplete}
-            handleClearHistory={handleClearHistory}
-          />
+        <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-6">
+          <div className="flex-1">
+            <h2 className="text-xl font-bold mb-4 text-gray-600">Customer Tickets</h2>
+            <Tickets
+              tickets={tickets}
+              handleSelectTask={handleSelectTask}
+            />
+          </div>
+
+          <div className="w-full lg:w-[350px]">
+            <h2 className="text-xl font-bold mb-4 text-gray-600">Task Status</h2>
+            <TicketStatus
+              selectedTasks={selectedTasks}
+              resolvedHistory={resolvedHistory}
+              handleComplete={handleComplete}
+              handleClearHistory={handleClearHistory}
+            ></TicketStatus>
+          </div>
         </div>
       </div>
 
-      <Footer />
+      <Footer></Footer>
     </>
   );
 }
